@@ -7,5 +7,4 @@ __pycache__/
 output/
 release/
 .staging/
-[0-1][0-9]_*.md
 20_CLOSED_BETA_RELEASE.md
