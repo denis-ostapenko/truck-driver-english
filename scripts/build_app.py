@@ -7,9 +7,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-PROJECT = Path(__file__).resolve().parents[2]
-EDITION = PROJECT / "truck-driver-edition"
+EDITION = Path(__file__).resolve().parents[1]
+PROJECT = EDITION.parent
 APP = EDITION / "app"
+SOURCE_CORE = next(
+    (candidate for candidate in (
+        PROJECT / "data" / "learning_core_1000.json",
+        EDITION / "data" / "learning_core_1000.json",
+    ) if candidate.is_file()),
+    EDITION / "data" / "learning_core_1000.json",
+)
 
 ALL_PROFILES = ["tractor", "hotshot-open", "hotshot-enclosed"]
 HOTSHOT_PROFILES = ["hotshot-open", "hotshot-enclosed"]
@@ -2100,7 +2107,7 @@ def build_truck_units(terms, phrases, questions, docs, signs):
 
 
 def build_core():
-    source = json.loads((PROJECT / "data" / "learning_core_1000.json").read_text(encoding="utf-8"))
+    source = json.loads(SOURCE_CORE.read_text(encoding="utf-8"))
     selected = []
     for item in source[:700]:
         selected.append({

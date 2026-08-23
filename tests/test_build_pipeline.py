@@ -12,6 +12,12 @@ from pathlib import Path
 sys.dont_write_bytecode = True
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT = ROOT.parent
+SOURCE_CORE = next(
+    candidate for candidate in (
+        PROJECT / "data" / "learning_core_1000.json",
+        ROOT / "data" / "learning_core_1000.json",
+    ) if candidate.is_file()
+)
 SPEC = importlib.util.spec_from_file_location("truck_build_app", ROOT / "scripts" / "build_app.py")
 BUILD_APP = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(BUILD_APP)
@@ -44,7 +50,7 @@ class BuildPipelineTests(unittest.TestCase):
             project = Path(temporary) / "english-basic-app"
             edition = project / "truck-driver-edition"
             (project / "data").mkdir(parents=True)
-            shutil.copy2(PROJECT / "data" / "learning_core_1000.json", project / "data" / "learning_core_1000.json")
+            shutil.copy2(SOURCE_CORE, project / "data" / "learning_core_1000.json")
             (edition / "scripts").mkdir(parents=True)
             shutil.copy2(ROOT / "scripts" / "build_app.py", edition / "scripts" / "build_app.py")
             for name in ("03_SITUATION_MATRIX.md", "07_INSPECTIONS_AND_OFFICIAL_QUESTIONS.md", "09_TRUCK_TERMINOLOGY.md"):
