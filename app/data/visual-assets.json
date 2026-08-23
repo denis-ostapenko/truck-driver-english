@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "visualBible": "11_VISUAL_BIBLE_BATCH_1.md",
+  "batch": 1,
+  "assets": [
+    {
+      "id": "equipment-fifth-wheel",
+      "path": "images/equipment/fifth-wheel-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["t:term:fifth-wheel"],
+      "alt": "Fifth wheel assembly on a tractor frame",
+      "prompt": "Use case: scientific-educational. Asset type: square equipment card for adult US truck driver English training. Subject: a correctly mounted fifth wheel coupling assembly centered on the rear frame of a contemporary US Class A tractor, trailer not attached, locking jaws and release handle physically plausible. Style: realistic instructional photography. Composition: close three-quarter top view, one clear focal object, neutral service-yard background. Vehicle continuity: white generic tractor, dark chassis. Lighting: neutral daylight. Constraints: no people, no text, no labels, no logos, no watermark. Avoid: European equipment, invented coupling parts, distorted frame rails, extra hoses.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "equipment-gladhands",
+      "path": "images/equipment/gladhands-red-blue-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["t:term:gladhand"],
+      "alt": "Red and blue trailer air-line gladhands",
+      "prompt": "Use case: scientific-educational. Asset type: square equipment card for adult US truck driver English training. Subject: close view behind a US Class A tractor cab showing two correctly connected trailer air-line gladhands, red emergency or supply line and blue service line, with realistic coiled hoses and fittings. Style: realistic instructional photography. Composition: fittings centered and easy to distinguish, uncluttered background. Lighting: neutral daylight. Constraints: exact red and blue color roles, no printed labels, no text, no logos, no watermark. Avoid: crossed connections, duplicate fittings, European connectors, damaged hoses, electrical cable presented as an air line.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "equipment-landing-gear",
+      "path": "images/equipment/landing-gear-raised-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["t:term:landing-gear"],
+      "alt": "Trailer landing gear raised for travel",
+      "prompt": "Use case: scientific-educational. Asset type: square equipment card for adult US truck driver English training. Subject: paired landing gear legs under the front of a coupled 53-foot US dry van trailer, fully raised in normal travel position, crank handle secured, feet clearly above pavement. Style: realistic instructional photography. Composition: side three-quarter close view, one clear focal subject. Vehicle continuity: light gray generic trailer and dark chassis. Lighting: neutral daylight. Constraints: tractor and trailer stationary, no person under equipment, no text, no labels, no logos, no watermark. Avoid: landing gear touching the ground, missing cross shaft, distorted legs, European trailer configuration.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "equipment-trailer-tandems",
+      "path": "images/equipment/trailer-tandems-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["t:term:tandem", "situation:overweight-and-rework"],
+      "alt": "Sliding trailer tandem axle assembly",
+      "prompt": "Use case: scientific-educational. Asset type: square equipment card for adult US truck driver English training. Subject: a realistic sliding tandem axle assembly under the rear of a US 53-foot dry van trailer, two axles and four visible wheels on the near side, slider rail holes and locked pins plausible. Style: realistic instructional photography. Composition: clean side three-quarter view, tandem fills most of frame. Vehicle continuity: light gray generic trailer. Lighting: neutral daylight. Constraints: vehicle stationary on level pavement, no text, no logos, no watermark. Avoid: extra axles, distorted wheels, missing suspension, impossible pin geometry, European trailer configuration.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "action-check-seal",
+      "path": "images/actions/check-seal-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["t:term:seal-number", "situation:dispatch-load-assignment", "situation:yard-directions-and-backing", "situation:drop-and-hook", "situation:loading-count-and-seal", "situation:delivery-and-pod", "situation:short-damaged-or-refused-load"],
+      "alt": "Driver checking a trailer door seal",
+      "prompt": "Use case: photorealistic-natural. Asset type: square action card for adult US truck driver English training. Subject: a truck driver using one hand to check that a tamper-evident bolt seal is secure on the locking bars of closed 53-foot dry van trailer doors. Setting: stationary trailer at a warehouse dock staging area. Style: realistic instructional documentary photography. Composition: hand, seal and locking bars are the single clear focus, driver partly visible. Lighting: neutral daylight. Safety: trailer stationary, no vehicle movement. Constraints: seal has no readable number, no text, no logos, no watermark. Avoid: open doors, broken seal, extra fingers, hand placed in a pinch point.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "action-open-hood-inspection",
+      "path": "images/actions/open-hood-inspection-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["t:question:open-the-hood:prompt", "situation:vehicle-inspection-directions"],
+      "alt": "Driver opening the tractor hood during an inspection",
+      "prompt": "Use case: photorealistic-natural. Asset type: square action card for adult US truck driver English training. Subject: a driver safely opening the forward-tilting hood of a stationary US Class A tractor while a generic commercial vehicle inspector observes from a safe position beside the inspection lane. Setting: American weigh station inspection area. Style: realistic instructional documentary photography. Composition: hood motion and safe hand placement clear, both people visible, truck centered. Lighting: neutral daylight. Safety: engine off, parking brake set, no live traffic conflict. Constraints: inspector uniform has no readable agency marks, no sign text, no logos, no watermark. Avoid: driver under the hood, moving truck, distorted hood hinges, European cab-over truck.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "action-hand-documents",
+      "path": "images/actions/hand-documents-inspector-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["situation:license-and-shipping-papers", "situation:hours-and-eld-inspection", "situation:level-iii-driver-and-credential-inspection", "situation:eld-malfunction-and-paper-logs", "situation:registration-or-document-mismatch", "situation:conditional-permit-and-route-check"],
+      "alt": "Driver handing a document folder to an inspector",
+      "prompt": "Use case: photorealistic-natural. Asset type: square action card for adult US truck driver English training. Subject: after a safe stop, a seated truck driver hands a plain closed document folder through the open driver-side window to a commercial vehicle inspector standing beside the cab. Setting: American inspection lane, contemporary US Class A tractor. Style: realistic instructional documentary photography. Composition: hands and folder are the focus, faces natural, driver-side orientation correct. Lighting: neutral daylight. Safety: engine off and parking brake set, inspector outside traffic lane. Constraints: blank folder, no readable papers, no badge text, no signs, no logos, no watermark. Avoid: phone use, moving vehicle, passenger-side exchange, extra fingers.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "action-check-tire",
+      "path": "images/actions/check-tire-sidewall-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["t:term:tire-sidewall", "situation:pre-trip-defect-report", "situation:fuel-def-and-receipt"],
+      "alt": "Driver inspecting a truck tire sidewall",
+      "prompt": "Use case: photorealistic-natural. Asset type: square action card for adult US truck driver English training. Subject: a truck driver crouched beside a stationary tractor tire, visually checking the tire sidewall and tread with a small flashlight during a pre-trip inspection. Setting: level truck parking area. Style: realistic instructional documentary photography. Composition: tire and inspection hand are the single focus, full wheel circular and undistorted. Lighting: early neutral daylight. Safety: parking brake set, high-visibility vest, driver clear of traffic. Constraints: no readable tire lettering, no text, no logos, no watermark. Avoid: hand under vehicle, moving truck, damaged anatomy, distorted wheel or lug pattern.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "scene-roadside-inspection",
+      "path": "images/situations/roadside-inspection-v01.webp",
+      "type": "ai-raster",
+      "format": "landscape-3-2",
+      "contentRefs": ["situation:roadside-stop", "situation:traffic-stop-by-state-trooper", "situation:elp-interview", "situation:highway-and-dynamic-signs", "situation:inspection-result-and-out-of-service-order", "situation:weigh-station-and-scale"],
+      "alt": "Inspector speaking with a driver at a parked truck",
+      "prompt": "Use case: photorealistic-natural. Asset type: horizontal 3:2 situation hero for adult US truck driver English training. Subject: a generic commercial vehicle inspector speaking with a truck driver through the open driver-side window after the tractor-trailer is safely parked in an American weigh station inspection lane. Vehicle: contemporary white US Class A sleeper tractor with light gray 53-foot trailer. Style: realistic instructional documentary photography. Composition: inspector and driver centered for a 390 px safe crop, folder visible but closed, full cab orientation clear. Lighting: neutral daylight. Safety: engine off, parking brake set, no traffic conflict. Constraints: no readable agency marks, signs, plates or documents, no logos, no watermark. Avoid: European road setting, right-hand-drive cab, unsafe body position, staged advertising look.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "scene-level-two-walkaround",
+      "path": "images/situations/level-two-walkaround-v01.webp",
+      "type": "ai-raster",
+      "format": "landscape-3-2",
+      "contentRefs": ["situation:level-ii-walk-around-inspection", "situation:level-i-full-inspection"],
+      "alt": "Inspector conducting a walk-around inspection",
+      "prompt": "Use case: photorealistic-natural. Asset type: horizontal 3:2 situation hero for adult US truck driver English training. Subject: a commercial vehicle inspector conducting a Level II style walk-around of a safely parked US Class A tractor-trailer, visually checking exterior lights, tires and visible equipment without going under the vehicle; driver stands nearby awaiting instructions. Setting: American inspection lane. Vehicle continuity: white sleeper tractor, light gray 53-foot trailer. Style: realistic instructional documentary photography. Composition: truck side and both people visible, main action centered for mobile crop. Lighting: neutral daylight. Safety: cones separate the inspection area from traffic, no person under the vehicle. Constraints: no readable official text, sign text, plate numbers, logos or watermark. Avoid: undercarriage crawl, European cab-over, distorted axles or wheels.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "scene-security-gate",
+      "path": "images/situations/security-gate-checkin-v01.webp",
+      "type": "ai-raster",
+      "format": "landscape-3-2",
+      "contentRefs": ["situation:appointment-and-eta", "situation:security-gate-check-in", "situation:shipper-pickup-check-in"],
+      "alt": "Driver checking in at a warehouse security gate",
+      "prompt": "Use case: photorealistic-natural. Asset type: horizontal 3:2 situation hero for adult US truck driver English training. Subject: a truck driver in a stationary US Class A tractor speaking through the open driver-side window with a gate clerk at a warehouse guard shack during check-in. Setting: modern American distribution center entrance, barrier arm down, truck queue area. Vehicle continuity: white sleeper tractor and light gray trailer. Style: realistic instructional documentary photography. Composition: driver, clerk and cab centered for mobile crop, practical uncluttered scene. Lighting: neutral morning daylight. Safety: truck stopped at the marked gate position, no pedestrian in vehicle path. Constraints: no readable gate signs, company names, unit numbers, paperwork, logos or watermark. Avoid: European road markings, right-hand-drive cab, raised barrier suggesting movement.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "scene-roadside-breakdown",
+      "path": "images/situations/roadside-breakdown-v01.webp",
+      "type": "ai-raster",
+      "format": "landscape-3-2",
+      "contentRefs": ["situation:crash-and-911", "situation:roadside-breakdown", "situation:delay-and-detention", "situation:truck-parking-and-overnight-stop", "situation:weather-closure-fatigue-or-no-hours"],
+      "alt": "Driver calling roadside assistance beside a parked truck",
+      "prompt": "Use case: photorealistic-natural. Asset type: horizontal 3:2 situation hero for adult US truck driver English training. Subject: a truck driver calling roadside assistance while standing in a safe position on the passenger side of a disabled US Class A tractor-trailer fully parked on a wide interstate shoulder. Vehicle continuity: white sleeper tractor, light gray 53-foot trailer. Scene: hazard lights active and warning triangles visible behind the truck, without implying exact measured placement. Style: realistic instructional documentary photography. Composition: truck, safe shoulder and driver centered for mobile crop, traffic distant. Lighting: overcast daylight. Safety: driver behind guardrail or well away from traffic, no phone use in cab while moving. Constraints: no readable road signs, plates or truck branding, no text, no logos, no watermark. Avoid: driver standing in live lane, crushed triangles, fire or dramatic crash damage.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "scene-hotshot-car-hauler",
+      "path": "images/situations/hotshot-car-hauler-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["h:heavy-duty-pickup", "h:gooseneck-trailer", "situation:pickup-and-gooseneck-roadside-inspection", "situation:auction-pickup-and-vin-check", "situation:vehicle-securement-check", "situation:scale-and-axle-weights", "situation:customer-delivery-and-condition-report"],
+      "alt": "Heavy-duty dually pickup towing a loaded gooseneck car-hauler trailer",
+      "prompt": "Use case: photorealistic-natural. Asset type: horizontal 3:2 course hero for adult US hotshot driver English training. Primary request: a contemporary generic white heavy-duty crew-cab dually pickup towing a low-profile gooseneck open car-hauler trailer carrying two ordinary passenger cars, safely parked in a clean American transport yard. Required correction: both transported cars must have clearly visible, plausible wheel-tire securement at front and rear, with flat untwisted webbing and closed ratchets attached to the trailer deck. Subject accuracy: pickup has dual rear wheels, gooseneck coupler in pickup bed, realistic two-axle trailer, cars centered with plausible clearance. Composition: full pickup and full trailer visible in three-quarter side view, centered for 390 px crop. Lighting: neutral daylight, realistic documentary photography. Constraints: no people, no readable text, no manufacturer styling or badges, no logos, no watermark. Avoid: semi tractor, bumper-pull hitch, unsecured cars, impossible axles, floating cars.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "equipment-gooseneck-coupling",
+      "path": "images/equipment/gooseneck-coupling-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["h:gooseneck-ball", "h:gooseneck-coupler", "h:safety-chain", "h:breakaway-cable"],
+      "alt": "Gooseneck coupler, safety chains, breakaway cable and electrical connector in a pickup bed",
+      "prompt": "Use case: scientific-educational. Asset type: square equipment card for adult US hotshot driver English training. Primary request: close three-quarter overhead view into a heavy-duty pickup bed showing a correctly locked gooseneck trailer coupler over the bed-mounted ball. Required correction: show two safety chains attached separately to rated bed anchors, a clearly connected independent breakaway cable clipped to a separate pickup anchor, and a fully seated seven-pin electrical plug. Subject accuracy: closed coupler latch with safety pin, realistic cable slack for turning, no cable lying loose or disconnected, plausible bed clearance. Style: realistic instructional photography. Composition: every connection visible and unambiguous. Lighting: neutral daylight. Constraints: no people, no printed labels, no logos, no watermark. Avoid: semi fifth wheel, bumper hitch, disconnected breakaway cable, loose electrical plug, invented hardware.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "scene-hotshot-winch-loading",
+      "path": "images/situations/hotshot-winch-loading-v01.webp",
+      "type": "ai-raster",
+      "format": "landscape-3-2",
+      "contentRefs": ["h:winch", "h:inoperable-vehicle", "situation:loading-an-inoperable-vehicle"],
+      "alt": "Hotshot driver winching an inoperable car onto a gooseneck trailer from a safe side position",
+      "prompt": "Use case: photorealistic-natural. Asset type: horizontal 3:2 situation hero for adult US hotshot driver English training. Primary request: a hotshot driver in a high-visibility vest using a handheld winch remote from a safe side position while an inoperable passenger car is aligned straight with the ramps of a low-profile gooseneck car-hauler trailer attached to a heavy-duty dually pickup. Scene: level American vehicle auction loading area. Safety and accuracy: no person in front of the car or in line with the tensioned winch cable, wheels aligned with ramps, trailer stationary, working area clear. Composition: pickup, trailer, car and driver visible, key action centered for mobile crop. Lighting: neutral daylight. Constraints: no readable auction signs, no logos, no watermark. Avoid: semi tractor, person straddling cable, car off-center, bent ramps, dramatic accident.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    },
+    {
+      "id": "scene-hotshot-enclosed-loading",
+      "path": "images/situations/hotshot-enclosed-loading-v01.webp",
+      "type": "ai-raster",
+      "format": "square",
+      "contentRefs": ["h:enclosed-car-trailer", "situation:loading-a-low-car-into-an-enclosed-trailer", "situation:enclosed-trailer-securement-inspection"],
+      "alt": "Heavy-duty dually pickup towing an enclosed gooseneck car-hauler trailer",
+      "prompt": "Use case: scientific-educational. Asset type: square equipment recognition card for adult US truck driver English training. Subject: a stationary generic white heavy-duty crew-cab dually pickup towing a long light-gray enclosed gooseneck car-hauler trailer with a plain smooth box body, tandem axles and a closed rear loading ramp. Composition: full pickup and full enclosed trailer visible in a three-quarter side view, centered for a 390 px crop. Lighting: neutral daylight. Constraints: the trailer is unmistakably enclosed, with no visible cargo, no windows, no readable text, no logos and no watermark. Avoid: open trailer, exposed cars, semi tractor, RV, livestock trailer, impossible axles or merged wheels.",
+      "qa": {"visual": "passed", "domain": "passed", "mobile": "passed"}
+    }
+  ]
+}

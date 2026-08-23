@@ -1,0 +1,9 @@
+# TRAINING SAMPLE, NOT VALID
+
+Pickup GVWR: 14,000 LB
+
+Trailer GVWR: 25,900 LB
+
+Combination rating: 39,900 LB
+
+Trailer VIN: TRAINING-HS0001

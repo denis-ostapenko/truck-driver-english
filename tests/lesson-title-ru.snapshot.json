@@ -1,0 +1,260 @@
+[
+  {
+    "id": "lesson:identity-and-unit-numbers",
+    "legacyId": "lesson-01",
+    "title": "Identity and unit numbers",
+    "titleRu": "Имя, перевозчик и номера машины",
+    "goal": "Представиться и назвать компанию, номера тягача и прицепа",
+    "phrases": [
+      "My name is Alex Example.",
+      "I drive for Training Carrier.",
+      "The tractor is T-204.",
+      "The trailer is TR-518."
+    ]
+  },
+  {
+    "id": "lesson:spelling-on-the-phone",
+    "legacyId": "lesson-02",
+    "title": "Spelling on the phone",
+    "titleRu": "Диктовка букв и номера по телефону",
+    "goal": "Продиктовать имя и идентификатор",
+    "phrases": [
+      "A as in Alpha.",
+      "Please confirm the last letter.",
+      "The code is T-R-five-one-eight."
+    ]
+  },
+  {
+    "id": "lesson:dates-times-and-appointments",
+    "legacyId": "lesson-03",
+    "title": "Dates, times and appointments",
+    "titleRu": "Даты, время и окна приема",
+    "goal": "Понять назначенное окно времени",
+    "phrases": [
+      "My appointment is at 9:30 a.m.",
+      "I arrived at 8:55.",
+      "The delivery is tomorrow morning."
+    ]
+  },
+  {
+    "id": "lesson:load-and-reference-numbers",
+    "legacyId": "lesson-04",
+    "title": "Load and reference numbers",
+    "titleRu": "Номера груза и документов",
+    "goal": "Слышать и повторять длинные номера",
+    "phrases": [
+      "The load number is zero-zero-zero-five-one-eight.",
+      "Please repeat the last four digits.",
+      "The BOL number is 2048."
+    ]
+  },
+  {
+    "id": "lesson:origin-and-destination",
+    "legacyId": "lesson-05",
+    "title": "Origin and destination",
+    "titleRu": "Место отправления и назначения",
+    "goal": "Коротко объяснить маршрут",
+    "phrases": [
+      "I picked up in Columbus, Ohio.",
+      "I am delivering in Nashville, Tennessee.",
+      "My final destination is Atlanta, Georgia."
+    ]
+  },
+  {
+    "id": "lesson:cargo-pieces-weight-and-seal",
+    "legacyId": "lesson-06",
+    "title": "Cargo, pieces, weight and seal",
+    "titleRu": "Груз, количество мест, вес и пломба",
+    "goal": "Описать груз",
+    "phrases": [
+      "I am hauling packaged food.",
+      "The load has 22 pallets.",
+      "The seal number is 000845."
+    ]
+  },
+  {
+    "id": "lesson:gate-yard-and-dock-directions",
+    "legacyId": "lesson-07",
+    "title": "Gate, yard and dock directions",
+    "titleRu": "КПП, территория и погрузочные ворота",
+    "goal": "Понять движение по территории и погрузочной площадке",
+    "phrases": [
+      "Proceed to gate two.",
+      "Park in row C.",
+      "Back into dock door 18."
+    ]
+  },
+  {
+    "id": "lesson:duty-status-and-available-hours",
+    "legacyId": "lesson-08",
+    "title": "Duty status and available hours",
+    "titleRu": "Рабочий статус и доступные часы",
+    "goal": "Объяснить HOS",
+    "phrases": [
+      "I am on duty, not driving.",
+      "I have four hours and eighteen minutes left.",
+      "My logs are current and certified."
+    ]
+  },
+  {
+    "id": "lesson:defect-report",
+    "legacyId": "lesson-09",
+    "title": "Defect report",
+    "titleRu": "Сообщение о неисправности",
+    "goal": "Описать деталь, неисправность, место и серьезность",
+    "phrases": [
+      "The right rear marker light is out.",
+      "I found an air leak near the trailer axle.",
+      "I will not move until it is checked."
+    ]
+  },
+  {
+    "id": "lesson:delay-and-updated-eta",
+    "legacyId": "lesson-10",
+    "title": "Delay and updated ETA",
+    "titleRu": "Задержка и новое время прибытия",
+    "goal": "Сообщить причину и новое время",
+    "phrases": [
+      "Traffic is stopped because of a crash.",
+      "My new ETA is 4:30 p.m.",
+      "I will update you after the detour."
+    ]
+  },
+  {
+    "id": "lesson:clarification-and-repair-phrases",
+    "legacyId": "lesson-11",
+    "title": "Clarification and repair phrases",
+    "titleRu": "Уточнение и проверка понимания",
+    "goal": "Управлять непониманием",
+    "phrases": [
+      "Could you repeat that more slowly?",
+      "Could you rephrase the question?",
+      "May I repeat the instruction to confirm it?"
+    ]
+  },
+  {
+    "id": "lesson:driver-and-vehicle-documents",
+    "legacyId": "lesson-12",
+    "title": "Driver and vehicle documents",
+    "titleRu": "Документы водителя и машины",
+    "goal": "Различать основные документы",
+    "phrases": [
+      "Here is my CDL.",
+      "Here is the tractor registration.",
+      "The periodic inspection report is on the vehicle."
+    ]
+  },
+  {
+    "id": "lesson:level-i-and-level-ii-commands",
+    "legacyId": "lesson-13",
+    "title": "Level I and Level II commands",
+    "titleRu": "Команды при проверке уровней I и II",
+    "goal": "Выполнять команды инспектора",
+    "phrases": [
+      "The parking brake is set.",
+      "The headlights are on.",
+      "I am applying and holding the service brake."
+    ]
+  },
+  {
+    "id": "lesson:level-iii-representative-questions",
+    "legacyId": "lesson-14",
+    "title": "Level III representative questions",
+    "titleRu": "Учебные вопросы для проверки уровня III",
+    "goal": "Отвечать о документах, рейсе и HOS",
+    "phrases": [
+      "I drive for Training Carrier.",
+      "I picked up in Columbus.",
+      "I have four hours and eighteen minutes left."
+    ]
+  },
+  {
+    "id": "lesson:state-trooper-traffic-stop",
+    "legacyId": "lesson-15",
+    "title": "State trooper traffic stop",
+    "titleRu": "Остановка дорожной полицией",
+    "goal": "Отличать остановку полицией от инспекции",
+    "phrases": [
+      "May I reach for the document folder?",
+      "I am delivering to Nashville.",
+      "I will stay in the vehicle."
+    ]
+  },
+  {
+    "id": "lesson:full-elp-rehearsal",
+    "legacyId": "lesson-16",
+    "title": "Full ELP rehearsal",
+    "titleRu": "Полная репетиция проверки владения английским",
+    "goal": "Пройти интервью только на английском и распознавание знаков",
+    "phrases": [
+      "I am hauling packaged food.",
+      "The sign means trucks must use this exit.",
+      "Would you like me to show or transfer the records?"
+    ]
+  },
+  {
+    "id": "lesson:pickup-trailer-and-ratings",
+    "legacyId": "hotshot-lesson-01",
+    "title": "Pickup, trailer and ratings",
+    "titleRu": "Пикап, прицеп и допустимые весовые характеристики",
+    "goal": "Описать состав Hotshot и назвать допустимые характеристики",
+    "phrases": [
+      "I operate a heavy-duty pickup with a gooseneck trailer.",
+      "The pickup and trailer ratings are on the certification labels.",
+      "I checked the combination and axle weights.",
+      "The trailer brake controller is working."
+    ]
+  },
+  {
+    "id": "lesson:loading-a-vehicle",
+    "legacyId": "hotshot-lesson-02",
+    "title": "Loading a vehicle",
+    "titleRu": "Погрузка автомобиля",
+    "goal": "Управлять погрузкой исправного и неисправного автомобиля",
+    "phrases": [
+      "Does the vehicle start and move under its own power?",
+      "Keep the steering unlocked while I guide the vehicle.",
+      "Center the vehicle on the trailer.",
+      "Stay clear of the tensioned winch line."
+    ]
+  },
+  {
+    "id": "lesson:securing-transported-vehicles",
+    "legacyId": "hotshot-lesson-03",
+    "title": "Securing transported vehicles",
+    "titleRu": "Крепление перевозимых автомобилей",
+    "goal": "Объяснить крепления и повторную проверку",
+    "phrases": [
+      "Each vehicle is secured at the front and rear.",
+      "The tiedowns are attached to rated points.",
+      "The wheel straps are centered and tight.",
+      "I rechecked every tiedown after departure."
+    ]
+  },
+  {
+    "id": "lesson:pickup-and-delivery-condition",
+    "legacyId": "hotshot-lesson-04",
+    "title": "Pickup and delivery condition",
+    "titleRu": "Прием и доставка: состояние автомобиля",
+    "goal": "Сверить VIN, отметить повреждения и получить подпись",
+    "phrases": [
+      "I need to verify the VIN before loading.",
+      "This scratch is listed as existing damage.",
+      "Please inspect the vehicle before signing.",
+      "The receiver reported no new damage."
+    ]
+  },
+  {
+    "id": "lesson:enclosed-car-trailer",
+    "legacyId": "hotshot-lesson-05",
+    "title": "Enclosed car trailer",
+    "titleRu": "Закрытый автовоз: погрузка, обзор и двери",
+    "goal": "Погрузить автомобиль при ограниченном обзоре и проверить двери",
+    "phrases": [
+      "Check the ramp angle and interior clearance.",
+      "Use a spotter because side clearance is limited.",
+      "The vehicle is secured inside the enclosed trailer.",
+      "The rear ramp and side doors are locked for travel."
+    ]
+  }
+]

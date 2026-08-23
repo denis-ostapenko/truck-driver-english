@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10251f">
+  <meta name="description" content="Практический курс американского английского для водителей коммерческих автомобилей в США">
+  <meta name="robots" content="index, follow">
+  <title>Truck Driver English</title>
+  <link rel="canonical" href="https://truck-driver-english-eug.pages.dev/">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=13">
+</head>
+<body>
+  <a class="skip-link" href="#app-main">Перейти к содержанию</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Основная навигация">
+      <button class="sidebar-close" id="sidebar-close" aria-label="Закрыть меню">Закрыть</button>
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img"><path d="M8 17h31v25H8zM39 27h9l8 8v7H39zM15 48a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm34 0a6 6 0 1 0 0-12 6 6 0 0 0 0 12Z"/><path d="M14 23h17M14 29h13" class="brand-line"/></svg>
+        </div>
+        <div>
+          <strong>Truck Driver</strong>
+          <span>English for the USA</span>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Главные разделы">
+        <button class="nav-button active" data-view="dashboard" data-hub="dashboard"><span>01</span>Сегодня</button>
+        <button class="nav-button" data-view="learn" data-hub="learn"><span>02</span>Учиться</button>
+        <button class="nav-button" data-view="practice" data-hub="practice"><span>03</span>Практика</button>
+        <button class="nav-button" data-view="reference" data-hub="reference"><span>04</span>Справочник</button>
+        <button class="nav-button" data-view="progress" data-hub="progress"><span>05</span>Прогресс</button>
+      </nav>
+
+      <div class="sidebar-status">
+        <div class="status-line"><span>Курс</span><strong>v5</strong></div>
+        <div class="status-line"><span>Режим</span><strong>Публичный курс</strong></div>
+        <div class="status-line"><span>ELP</span><strong>2026</strong></div>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Открыть меню" aria-controls="sidebar" aria-expanded="false">Меню</button>
+        <div>
+          <p class="eyebrow" id="view-eyebrow">Рабочий маршрут</p>
+          <h1 id="view-title" tabindex="-1">Сегодня</h1>
+        </div>
+        <div class="top-progress">
+          <div><span id="top-progress-label">Письменно: 0 из 0</span><strong id="top-progress-percent">0%</strong></div>
+          <div class="progress-track"><span id="top-progress-bar"></span></div>
+        </div>
+      </header>
+
+      <main id="app-main" tabindex="-1">
+        <section class="view active" id="view-dashboard">
+          <div class="today-shell">
+            <article class="next-step-card">
+              <div class="next-step-copy">
+                <p class="kicker">Сейчас один шаг</p>
+                <span class="session-time" id="session-time-label">10 минут</span>
+                <h2 id="next-drill-title">Рабочая фраза</h2>
+                <p class="next-english" id="today-english" lang="en-US">Pull into the inspection lane.</p>
+                <button class="audio-button light" id="today-audio">Прослушать</button>
+                <p class="next-meaning" id="next-drill-detail">Заедьте на полосу инспекции.</p>
+                <div class="hero-actions">
+                  <button class="button primary" id="start-daily-route">Начать этот шаг</button>
+                  <button class="button secondary" id="skip-daily-step">Другой шаг</button>
+                </div>
+                <p class="completion-hint" id="today-completion-hint">Готово, когда вы услышали фразу и ответили вслух.</p>
+              </div>
+              <div class="next-step-visual" id="hero-profile-visual"></div>
+            </article>
+
+            <div class="route-progress" id="route-progress" aria-live="polite"></div>
+            <div class="daily-grid compact-route" id="daily-grid"></div>
+
+            <section class="quick-actions" aria-label="Быстрые действия">
+              <button data-quick="emergency"><strong>Экстренная фраза</strong><span>Нужный ответ сейчас</span></button>
+              <button id="start-elp-practice"><strong>ELP</strong><span>Репрезентативные вопросы и команды</span></button>
+              <button data-go="inspections"><strong>Инспекция</strong><span>Порядок и команды</span></button>
+            </section>
+
+            <div class="today-footer">
+              <button class="text-button" id="refresh-day">Обновить задания</button>
+              <button class="text-button" data-go="progress">Изменить время и профиль</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="view-learn">
+          <div class="hub-intro"><p class="eyebrow">Выберите один формат</p><h2>Учиться</h2><p>Короткие понятные занятия. Начните с карточек, если не уверены.</p></div>
+          <div class="hub-grid">
+            <button class="hub-card primary-hub" data-go="cards"><span>3-5 минут</span><strong>Карточки</strong><p>Введите английский ответ и сразу проверьте себя.</p></button>
+            <button class="hub-card" data-go="lessons"><span>Фразы по теме</span><strong>Уроки</strong><p>Рабочие диалоги для рейса, погрузочной площадки, ELD и Hotshot.</p></button>
+            <button class="hub-card" data-go="course"><span>Поиск</span><strong>Курс</strong><p>Найдите слово, перевод или рабочую фразу.</p></button>
+          </div>
+        </section>
+
+        <section class="view" id="view-practice">
+          <div class="hub-intro"><p class="eyebrow">Ответьте как на работе</p><h2>Практика</h2><p>Сначала короткая попытка, затем подсказка и безопасный правильный путь.</p></div>
+          <div class="hub-grid">
+            <button class="hub-card primary-hub" data-go="inspections"><span>Тренировка по требованиям</span><strong>ELP и инспекция</strong><p>Репрезентативные вопросы, команды и понимание на слух.</p></button>
+            <button class="hub-card" data-go="situations"><span>40 сцен</span><strong>Рабочие ситуации</strong><p>Читайте, слушайте или отвечайте сами.</p></button>
+            <button class="hub-card" data-go="diagnostic"><span>Необязательно</span><strong>Стартовая диагностика</strong><p>Не менее двух заданий на каждый из четырех навыков и персональный маршрут.</p></button>
+            <button class="hub-card" data-go="errors"><span id="error-hub-count">Ошибок: 0</span><strong>Журнал ошибок</strong><p>Повторите только то, что пока не получается.</p></button>
+            <button class="hub-card" data-go="branching"><span>5 сценариев</span><strong>Выбор действия</strong><p>Безопасный ответ и объяснение ошибки.</p></button>
+          </div>
+          <section class="voice-lab" aria-labelledby="voice-lab-title">
+            <div><p class="eyebrow">Разговорная практика</p><h3 id="voice-lab-title">Лаборатория ответа</h3><p>Скажите целевую реплику без подсказки, затем прослушайте свою запись.</p></div>
+            <div class="voice-target"><span>Целевая реплика</span><strong id="voice-target" lang="en-US">Could you repeat that more slowly, please?</strong><button class="audio-button light" id="voice-model">Прослушать модель</button></div>
+            <div class="voice-actions"><button class="button primary" id="voice-record">Записать</button><button class="button secondary" id="voice-play" disabled>Прослушать</button><button class="button secondary" id="voice-delete" disabled>Удалить</button></div>
+            <p id="voice-status" role="status">Записи пока нет.</p>
+            <fieldset class="voice-rubric" id="voice-rubric" disabled><legend>Самопроверка после прослушивания</legend><label><input type="checkbox" value="meaning"> Смысл понятен</label><label><input type="checkbox" value="complete"> Реплика закончена</label><label><input type="checkbox" value="clear"> Ключевые слова слышны</label><button class="button secondary" id="voice-retry" type="button" disabled>Повторить попытку</button></fieldset>
+          </section>
+        </section>
+
+        <section class="view" id="view-reference">
+          <div class="hub-intro"><p class="eyebrow">Быстро найти на работе</p><h2>Справочник</h2><p>Официальная графика, учебные документы и короткие конспекты разделены явно.</p></div>
+          <div class="hub-grid">
+            <button class="hub-card primary-hub" data-go="signs"><span>49 официальных SVG</span><strong>Знаки</strong><p>Официальные знаки, переменные таблички и электронные табло разделены явно.</p></button>
+            <button class="hub-card" data-go="documents"><span>TRAINING SAMPLE</span><strong>Документы</strong><p>24 учебных образца для тренировки.</p></button>
+            <button class="hub-card" data-go="summaries"><span>6 схем</span><strong>Графические конспекты</strong><p>Порядок действий и цветные контрольные списки.</p></button>
+          </div>
+        </section>
+
+        <section class="view" id="view-course">
+          <div class="task-strip"><strong>Сейчас:</strong> найдите нужную фразу. <span>Для тренировки ответа откройте Карточки.</span><button data-go="learn">Назад в Учиться</button></div>
+          <div class="section-heading compact">
+            <div><p class="eyebrow">1200 единиц курса</p><h2>Словарь курса</h2></div>
+          </div>
+          <section class="study-panel vehicle-compare" aria-labelledby="vehicle-compare-title">
+            <div class="study-panel-head"><div><p class="eyebrow">Распознавание техники</p><h3 id="vehicle-compare-title">Три рабочие конфигурации</h3></div><span class="source-note">Учебные иллюстрации</span></div>
+            <div class="compare-grid">
+              <article><img src="images/situations/roadside-inspection-v01.webp" alt="Conventional tractor with semi-trailer at a roadside inspection"><strong>Tractor-trailer</strong><p>Тягач, седельно-сцепное устройство (fifth wheel) и отдельный полуприцеп. Проверяйте тягач и прицеп как две части автопоезда.</p></article>
+              <article><img src="images/situations/hotshot-car-hauler-v01.webp" alt="Heavy-duty dually pickup towing an open gooseneck car-hauler"><strong>Hotshot open</strong><p>Тяжелый пикап со сдвоенными задними колесами и открытый прицеп gooseneck. Груз и крепления видны снаружи.</p></article>
+              <article><img src="images/situations/hotshot-enclosed-loading-v01.webp" alt="Heavy-duty dually pickup towing an enclosed gooseneck car-hauler"><strong>Hotshot enclosed</strong><p>Тяжелый пикап со сдвоенными задними колесами и закрытый прицеп gooseneck. Контролируйте угол рампы и зазоры до крыши, зеркал и дверей.</p></article>
+            </div>
+          </section>
+          <div class="toolbar course-toolbar">
+            <input class="search-input" id="course-search" type="search" aria-label="Поиск по курсу" placeholder="Найти слово, фразу или перевод">
+            <select id="course-track" aria-label="Фильтр трека">
+              <option value="all">General + Truck + Hotshot</option>
+              <option value="core">General Core 700</option>
+              <option value="truck">Truck Track 400</option>
+              <option value="hotshot">Hotshot Car Hauler 100</option>
+            </select>
+            <select id="course-theme" aria-label="Фильтр темы"><option value="all">Все темы</option></select>
+          </div>
+          <div class="course-summary" id="course-summary"></div>
+          <div class="unit-list" id="unit-list"></div>
+          <button class="button secondary load-more" id="load-more-units">Показать еще</button>
+        </section>
+
+        <section class="view" id="view-cards">
+          <div class="task-strip"><strong>Сейчас:</strong> введите английскую единицу до показа модели. <span id="card-session-left">Осталось: 1.</span><button data-go="learn">Назад в Учиться</button></div>
+          <div class="section-heading compact">
+            <div><p class="eyebrow">Активное вспоминание</p><h2>Карточки</h2></div>
+            <div class="segmented" id="card-track-tabs" role="tablist" aria-label="Трек карточек">
+              <button class="active" id="card-tab-mixed" role="tab" aria-selected="true" aria-controls="study-card" tabindex="0" data-card-track="mixed">Смешанный</button>
+              <button id="card-tab-core" role="tab" aria-selected="false" aria-controls="study-card" tabindex="-1" data-card-track="core">General</button>
+              <button id="card-tab-truck" role="tab" aria-selected="false" aria-controls="study-card" tabindex="-1" data-card-track="truck">Truck</button>
+              <button id="card-tab-hotshot" role="tab" aria-selected="false" aria-controls="study-card" tabindex="-1" data-card-track="hotshot">Hotshot</button>
+            </div>
+          </div>
+          <div class="queue-note" id="card-queue-note" aria-live="polite"></div>
+          <div class="card-stage">
+            <div class="study-card" id="study-card" role="tabpanel" aria-labelledby="card-tab-mixed" tabindex="0">
+              <div class="card-topline"><span id="card-track-label">Truck Track</span><span id="card-position">1 / 1200</span></div>
+              <div class="card-main">
+                <button class="audio-button" id="card-audio" aria-label="Прослушать модель после ответа" disabled>Модель после ответа</button>
+                <p class="blind-cue"><span id="card-cue-label">Переведите на английский</span><strong id="card-cue"></strong></p>
+                <label class="response-label" for="card-response">Введите ответ до раскрытия</label>
+                <textarea class="typed-response" id="card-response" lang="en-US" autocomplete="off" spellcheck="true"></textarea>
+                <button class="button primary" id="check-card-response">Проверить ответ</button>
+                <p class="evaluation-status" id="card-evaluation-status" role="status"></p>
+                <div class="card-answer" id="card-answer" hidden>
+                  <img class="card-visual" id="card-visual" alt="" hidden>
+                  <h2 id="card-word" lang="en-US">Pull into the inspection lane.</h2>
+                  <p class="pronunciation" id="card-pron"></p>
+                  <strong id="card-translation"></strong>
+                  <p id="card-example"></p>
+                </div>
+              </div>
+              <div class="card-actions" id="card-actions">
+                <button class="button primary" id="reveal-card">Показать ответ</button>
+              </div>
+            </div>
+            <aside class="card-tip">
+              <p class="eyebrow">Как работать</p>
+              <ol>
+                <li>Введите английскую фразу до модели.</li>
+                <li>Получите проверяемый результат.</li>
+                <li>После этого откройте модель и прослушайте ее.</li>
+              </ol>
+              <button class="text-button" id="shuffle-cards">Перемешать очередь</button>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="view-inspections">
+          <div class="task-strip"><strong>Сейчас:</strong> выберите вопрос или порядок инспекции. <span>Завершение: самостоятельный ответ или пройденный блок.</span><button data-go="practice">Назад в Практику</button></div>
+          <div class="section-heading compact">
+            <div><p class="eyebrow">CVSA + FMCSA ELP</p><h2>Инспекции, вопросы и команды</h2></div>
+            <div class="segmented" id="inspection-tabs" role="tablist" aria-label="Режим инспекций">
+              <button class="active" id="inspection-tab-levels" role="tab" aria-selected="true" aria-controls="inspection-levels-panel" tabindex="0" data-inspection-tab="levels">Уровни</button>
+              <button id="inspection-tab-questions" role="tab" aria-selected="false" aria-controls="inspection-questions-panel" tabindex="-1" data-inspection-tab="questions">75 тренировочных заданий</button>
+              <button id="inspection-tab-elp" role="tab" aria-selected="false" aria-controls="inspection-elp-panel" tabindex="-1" data-inspection-tab="elp">Порядок ELP</button>
+            </div>
+          </div>
+          <div id="inspection-levels-panel" role="tabpanel" aria-labelledby="inspection-tab-levels" tabindex="0">
+            <div class="inspection-intro"><strong>Практический фокус:</strong> уровни I, II и III. Уровни IV, V, VI и VII нужны для понимания назначения проверки. Level VIII изучается как электронная проверка, которая пока проходит эксплуатационное тестирование.</div>
+            <div class="level-grid" id="level-grid"></div>
+          </div>
+          <div id="inspection-questions-panel" role="tabpanel" aria-labelledby="inspection-tab-questions" tabindex="0" hidden>
+            <div class="toolbar">
+              <select id="question-category" aria-label="Категория заданий"></select>
+              <button class="button secondary" id="random-question">Случайное задание</button>
+            </div>
+            <article class="official-card">
+              <div class="official-meta"><span id="question-number">Задание 1</span><span id="question-category-label"></span></div>
+              <button class="audio-button light" id="question-audio">Прослушать</button>
+              <div class="listening-targets segmented" aria-label="Что слушать">
+                <button class="active" type="button" data-listening-target="prompt">Вопрос инспектора</button>
+                <button type="button" data-listening-target="answer" hidden>Ответ водителя</button>
+              </div>
+              <div class="listening-ladder" aria-label="Доступные ступени понимания на слух">
+                <button data-listening-profile="clean">Чистый звук</button>
+                <button data-listening-profile="phone">Телефон</button>
+                <button class="active" data-listening-profile="roadside">На дороге</button>
+                <button data-listening-profile="pause">Повтор с паузой</button>
+              </div>
+              <div class="question-visible-stimulus" id="question-visible-stimulus" hidden></div>
+              <h3 id="question-prompt" lang="en-US"></h3>
+              <div class="elp-response-capture" id="elp-response-capture">
+                <label for="elp-response">Ответьте по-английски до просмотра модели</label>
+                <textarea id="elp-response" lang="en-US" autocomplete="off" spellcheck="true"></textarea>
+                <p>Ответьте своими словами, сохранив ключевой смысл и значения.</p>
+                <button class="button primary" id="check-question-response" type="button">Проверить ответ</button>
+                <button class="text-button" id="elp-no-answer" type="button">Не могу ответить без подсказки</button>
+                <p class="evaluation-status" id="question-evaluation-feedback" role="status"></p>
+              </div>
+              <div class="official-answer" id="official-answer" hidden>
+                <span>Учебный ответ</span>
+                <p id="question-answer" lang="en-US"></p>
+                <button class="audio-button light" id="answer-audio">Прослушать ответ</button>
+                <div class="question-self-check"><span>Проверяемый статус</span><small id="question-attempt-status" aria-live="polite"></small></div>
+              </div>
+              <div class="card-actions">
+                <button class="button primary" id="reveal-question">Показать учебный ответ</button>
+                <button class="button secondary" id="next-question">Следующий</button>
+              </div>
+            </article>
+          </div>
+          <div id="inspection-elp-panel" role="tabpanel" aria-labelledby="inspection-tab-elp" tabindex="0" hidden>
+            <section class="study-panel elp-flow" aria-labelledby="elp-flow-title">
+              <div class="study-panel-head"><div><p class="eyebrow">Тренировка только на английском</p><h3 id="elp-flow-title">ELP на дороге: порядок действий</h3></div><span class="source-note">Политика FMCSA, 16 апреля 2026</span></div>
+              <div class="flow-grid">
+                <article class="flow-preparation"><span>P</span><strong>Подготовка: безопасная остановка</strong><p>Остановитесь безопасно, опустите окно и держите документы доступными.</p></article>
+                <article><span>1</span><strong>ELP, этап 1: семь функций</strong><p>Без переводчика: безопасно подтвердите команду, назовите тягач или пикап и прицеп, место отправления, пункт назначения, груз, перевозчика или работодателя и текущий duty status или HOS.</p></article>
+                <article><span>2</span><strong>ELP, этап 2: дорожные знаки</strong><p>К знакам переходят только после успешного этапа 1. Назовите смысл знака и нужное действие.</p></article>
+                <article class="flow-support"><span>S</span><strong>Дополнительная тренировка: документы</strong><p>Покажите только запрошенный документ и назовите его.</p></article>
+                <article class="flow-support"><span>S</span><strong>Дополнительная тренировка: команды</strong><p>Попросите повторить непонятную команду. Выполняйте ее только после того, как поняли.</p></article>
+              </div>
+              <div class="panel-actions"><button class="button primary" id="elp-step-one">Начать этап 1 ELP</button><button class="button secondary" id="elp-step-two" disabled>Этап 2 заблокирован</button></div>
+              <p id="elp-gate-status" role="status">Сначала дайте семь ответов этапа 1 без перевода.</p>
+              <p id="elp-step-two-status" role="status">Этап 2 оценивает только карточки, где нужно прочитать английский текст. Все 49 FHWA SVG и 16 TRAINING DMS остаются в справочнике.</p>
+              <p class="safety-note">Порядок тренировки соответствует двум этапам проверки ELP.</p>
+            </section>
+          </div>
+        </section>
+
+        <section class="view" id="view-situations">
+          <div class="task-strip"><strong>Сейчас:</strong> услышьте намерение и дайте ответ. <span>После ответа вы сразу получите результат.</span><button data-go="practice">Назад в Практику</button></div>
+          <div class="section-heading compact">
+            <div><p class="eyebrow">40 рабочих сцен</p><h2>Ситуации</h2></div>
+            <div class="segmented" id="situation-modes" role="tablist" aria-label="Режим ситуации">
+              <button class="active" id="situation-tab-read" role="tab" aria-selected="true" aria-controls="situation-player" tabindex="0" data-situation-mode="read">Читать</button>
+              <button id="situation-tab-say" role="tab" aria-selected="false" aria-controls="situation-player" tabindex="-1" data-situation-mode="say">Скажи сам</button>
+              <button id="situation-tab-listen" role="tab" aria-selected="false" aria-controls="situation-player" tabindex="-1" data-situation-mode="listen">На слух</button>
+              <button id="situation-tab-phone" role="tab" aria-selected="false" aria-controls="situation-player" tabindex="-1" data-situation-mode="phone">Телефон</button>
+              <button id="situation-tab-elp" role="tab" aria-selected="false" aria-controls="situation-player" tabindex="-1" data-situation-mode="elp">ELP</button>
+            </div>
+          </div>
+          <div class="mode-note" id="situation-mode-note"></div>
+          <section class="situation-inventory" id="situation-inventory" aria-live="polite">
+            <div><strong id="situation-availability">Доступно 0 из 40</strong><p id="situation-filter-context"></p></div>
+            <div><p id="situation-filter-help">Недоступные сцены остаются в списке с указанием причины.</p><button class="text-button" type="button" data-go="progress">Изменить профиль и условия</button></div>
+          </section>
+          <div class="situation-layout">
+            <aside class="situation-list" id="situation-list"></aside>
+            <article class="situation-player" id="situation-player" role="tabpanel" aria-labelledby="situation-tab-read" tabindex="0">
+              <div class="situation-header">
+                <div><span class="priority-pill" id="situation-priority">Приоритет 1</span><h3 id="situation-title"></h3></div>
+                <button class="audio-button" id="play-situation">Прослушать сцену</button>
+              </div>
+              <figure class="situation-visual" id="situation-visual" hidden><img id="situation-image" alt=""></figure>
+              <p class="situation-goal" id="situation-goal"></p>
+              <div class="role-row" id="situation-roles"></div>
+              <section class="typed-challenge" id="situation-challenge">
+                <label class="response-label" for="situation-response">Ответ водителя до раскрытия модели</label>
+                <p id="situation-information-gap"></p>
+                <textarea class="typed-response" id="situation-response" lang="en-US" autocomplete="off"></textarea>
+                <button class="button primary" id="check-situation-response" type="button">Проверить ответ</button>
+                <p class="evaluation-status" id="situation-evaluation-feedback" role="status" tabindex="-1"></p>
+              </section>
+              <div class="dialogue" id="situation-dialogue"></div>
+              <div class="completion-row"><span id="situation-complete-status"></span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="view-signs">
+          <div class="task-strip"><strong>Сейчас:</strong> назовите смысл и действие. <span>Готово после письменного ответа до показа модели.</span><button data-go="reference">Назад в Справочник</button></div>
+          <div class="section-heading compact">
+            <div><p class="eyebrow">Распознавание по MUTCD</p><h2>80 знаков в полном справочнике</h2></div>
+          </div>
+          <div class="inspection-intro">49 официальных знаков FHWA, 15 переменных карточек и 16 учебных электронных табло.</div>
+          <div class="toolbar signs-toolbar">
+            <select id="sign-category" aria-label="Категория знаков"><option value="all">Все категории</option></select>
+            <select id="sign-status" aria-label="Состояние изучения знаков"><option value="all">Все состояния</option><option value="unlearned">Еще не изучены</option><option value="learned">Изучены</option></select>
+            <p class="toolbar-note" id="sign-scope-note">Дайте письменный ответ до показа смысла.</p>
+          </div>
+          <div class="sign-grid" id="sign-grid"></div>
+          <div class="collection-footer"><span id="sign-count" aria-live="polite"></span><button class="button secondary" id="load-more-signs">Показать еще</button></div>
+        </section>
+
+        <section class="view" id="view-documents">
+          <div class="task-strip"><strong>Сейчас:</strong> найдите запрошенное поле. <span>Введите значение до показа ответа.</span><button data-go="reference">Назад в Справочник</button></div>
+          <div class="section-heading compact">
+            <div><p class="eyebrow">Синтетический учебный набор</p><h2>24 документа водителя</h2></div>
+          </div>
+          <section class="study-panel document-wallet" aria-labelledby="document-wallet-title">
+            <div class="study-panel-head"><div><p class="eyebrow">Папка документов</p><h3 id="document-wallet-title">Что подготовить до проверки</h3></div><span class="source-note" id="document-wallet-count">Учебный список</span></div>
+            <div class="checklist-grid" id="document-wallet-grid"></div>
+            <p class="safety-note">Фактический набор зависит от перевозчика, машины, груза, маршрута и юрисдикции. Все образцы ниже синтетические.</p>
+          </section>
+          <div class="document-layout">
+            <aside class="document-list" id="document-list"></aside>
+            <article class="document-viewer">
+              <div class="sample-ribbon">TRAINING SAMPLE, NOT VALID</div>
+              <div class="document-title"><div><p id="document-status"></p><h3 id="document-title" lang="en-US"></h3><span id="document-title-ru"></span></div><button class="audio-button" id="document-audio">Прослушать ответ</button></div>
+              <div class="document-fields" id="document-fields"></div>
+              <div class="document-practice"><span>Учебный ответ</span><p id="document-practice" lang="en-US"></p></div>
+              <div class="field-quiz" id="field-quiz"></div>
+              <div class="document-compliance" id="document-compliance"></div>
+              <div class="completion-row"><span id="document-complete-status"></span></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="view" id="view-lessons">
+          <div class="task-strip"><strong>Сейчас:</strong> откройте один урок и ответьте до показа примера. <span>После ответа вы сразу получите результат.</span><button data-go="learn">Назад в Учиться</button></div>
+          <div class="section-heading compact">
+            <div><p class="eyebrow">21 урок общения</p><h2>Профессиональная основа</h2></div>
+          </div>
+          <div class="lesson-grid" id="lesson-grid"></div>
+        </section>
+
+        <section class="view" id="view-diagnostic">
+          <div class="task-strip"><strong>Необязательно:</strong> можно выйти в любой момент. <span>Не менее 12 заданий по четырем навыкам, около 7 минут.</span><button data-go="practice">Назад в Практику</button></div>
+          <div class="focus-panel" id="diagnostic-panel">
+            <p class="eyebrow">Спокойная стартовая проверка</p>
+            <h2>Подберем удобный маршрут</h2>
+            <p>Результат поможет выбрать первые задания. Это не официальная оценка CEFR или ACTFL.</p>
+            <div id="diagnostic-content"></div>
+          </div>
+        </section>
+
+        <section class="view" id="view-errors">
+          <div class="task-strip"><strong>Сейчас:</strong> повторите до 3 трудных пунктов. <span>Готово после новой самостоятельной попытки.</span><button data-go="practice">Назад в Практику</button></div>
+          <div class="section-heading compact"><div><p class="eyebrow">Автоматическая очередь</p><h2>Журнал ошибок</h2></div><button class="button primary" id="start-error-drill">Начать повторение</button></div>
+          <p class="mode-note">Здесь появляются карточки с оценкой «Трудно» или «Снова», задания с подсказкой или неудачным ответом, ошибки диагностики и выбора действия. Общая кнопка открывает первый пункт очереди.</p>
+          <div class="error-list" id="error-list"></div>
+        </section>
+
+        <section class="view" id="view-branching">
+          <div class="task-strip"><strong>Сейчас:</strong> выберите безопасный ответ. <span id="branch-left">5 ситуаций.</span><button data-go="practice">Назад в Практику</button></div>
+          <article class="branch-card">
+            <div class="branch-progress" id="branch-progress"></div>
+            <p class="eyebrow" id="branch-label">Ситуация 1</p>
+            <h2 id="branch-title"></h2>
+            <p id="branch-prompt"></p>
+            <p class="mode-note" id="branch-information-gap"></p>
+            <div class="branch-options" id="branch-options"></div>
+            <div class="typed-challenge" id="branch-driver-challenge" hidden>
+              <label class="response-label" for="branch-driver-response">Введите реплику водителя для выбранного действия</label>
+              <textarea class="typed-response" id="branch-driver-response" lang="en-US" autocomplete="off"></textarea>
+              <button class="button primary" id="check-branch-driver-response" type="button">Проверить реплику</button>
+            </div>
+            <div class="branch-feedback" id="branch-feedback" hidden></div>
+            <button class="button primary" id="branch-next" hidden>Следующая ситуация</button>
+          </article>
+        </section>
+
+        <section class="view" id="view-summaries">
+          <div class="task-strip"><strong>Сейчас:</strong> выберите нужный конспект. <span></span><button data-go="reference">Назад в Справочник</button></div>
+          <div class="section-heading compact"><div><p class="eyebrow">Рабочий блокнот</p><h2>6 графических конспектов</h2></div></div>
+          <div class="notebook-grid">
+            <article class="notebook-card"><header><span>01</span><div><strong>Инспекция на дороге</strong><small>Порядок контакта</small></div></header><ol><li class="check-green">Безопасно остановиться</li><li>Опустить окно и слушать команду</li><li>Показать только запрошенные документы</li><li>Ответить на вопросы и выполнить понятные команды</li><li class="check-red">Не двигаться, пока команда не понятна</li></ol></article>
+            <article class="notebook-card"><header><span>02</span><div><strong>ELP</strong><small>Подготовка и два этапа оценки</small></div></header><ol><li class="check-green">Подготовка: безопасная остановка</li><li>Этап 1: вопросы и команды на английском</li><li>Этап 2: дорожные знаки, только после успешного этапа 1</li><li>Отдельная тренировка: документы и команды</li></ol></article>
+            <article class="notebook-card"><header><span>03</span><div><strong>Документы</strong><small>Что показать</small></div></header><ul><li class="check-green">Фильтрованный список: только документы текущего профиля и включенных условий</li><li class="check-amber">Для рейса: BOL, разрешения, весовой талон и документы о доставке после включения соответствующего условия</li><li class="check-blue">По условиям: CDL, ELD, медицинские документы, hazmat, oversize и другие применимые записи</li></ul><b>TRAINING CHECKLIST, NOT A DOCUMENT</b></article>
+            <article class="notebook-card"><header><span>04</span><div><strong>Осмотр перед рейсом</strong><small>Короткая последовательность</small></div></header><ol><li>Документы и маршрут</li><li>Органы управления в кабине и свет</li><li>Моторный отсек</li><li>Сцепка и прицеп</li><li>Шины, тормоза, груз и финальный обход</li></ol></article>
+            <article class="notebook-card"><header><span>05</span><div><strong>Экстренный звонок</strong><small>Что сказать</small></div></header><ol><li class="check-red">Вы сейчас в безопасности?</li><li>Точное место и направление движения</li><li>Состояние тягача, прицепа и груза</li><li>Травмы, пожар или перекрытая полоса</li><li>Повторить инструкции и номер для обратного звонка</li></ol></article>
+            <article class="notebook-card"><header><span>06</span><div><strong>Hotshot</strong><small>Open и enclosed отдельно</small></div></header><div class="split-check"><section><b>OPEN</b><p>Видимый груз, проверенные точки крепления, ремни или цепи, их прокладка и повторная проверка.</p></section><section><b>ENCLOSED</b><p>Угол рампы, зазоры до крыши, зеркал и дверей, помощник и внутреннее крепление.</p></section></div><p class="check-red">Иллюстрация не заменяет проверенную процедуру крепления груза.</p></article>
+          </div>
+        </section>
+
+        <section class="view" id="view-progress">
+          <div class="section-heading compact">
+            <div><p class="eyebrow">Ваш прогресс</p><h2>Результаты курса</h2></div>
+          </div>
+          <div class="progress-guidance" id="progress-guidance"></div>
+          <section class="settings-card">
+            <div><p class="eyebrow">Ежедневный маршрут</p><h3>Сколько времени есть?</h3></div>
+            <div class="segmented time-switch" aria-label="Время занятия"><button data-change-time="5">5 минут</button><button data-change-time="10">10 минут</button><button data-change-time="15">15 минут</button></div>
+          </section>
+          <details class="settings-card conditions-card" aria-labelledby="conditions-title">
+            <summary><span><span class="eyebrow">Настройки курса</span><strong id="conditions-title">Условия рейса и оборудования</strong><small>Открыть и изменить</small></span></summary>
+            <div class="conditions-grid" id="conditions-settings"></div>
+          </details>
+          <section class="week-plan" aria-labelledby="week-plan-title"><div class="section-heading compact"><div><p class="eyebrow">Можно менять и пропускать</p><h3 id="week-plan-title">Маршрут на 7 дней</h3></div></div><div id="week-plan-grid"></div></section>
+          <div class="progress-overview" id="progress-overview"></div>
+          <p class="persistence-status" id="persistence-status" role="alert" hidden></p>
+          <div class="progress-actions">
+            <article><h3>Резервная копия</h3><p>Скачайте JSON, чтобы перенести прогресс или восстановить его позже.</p><div class="button-row"><button class="button primary" id="export-progress">Скачать прогресс</button><button class="button secondary" id="import-progress">Загрузить прогресс</button><input id="import-file" type="file" accept="application/json" hidden></div></article>
+            <article><h3>Начать заново</h3><p>Удаляет только прогресс Truck Driver English. Исходный English Basic не затрагивается.</p><button class="button danger" id="reset-progress">Сбросить прогресс</button></article>
+            <article><h3>Инструкции</h3><p>Полное руководство на русском, украинском и белорусском языках, MIT License и NOTICE.</p><div class="button-row"><a class="button secondary" href="guide.html#ru" hreflang="ru">Русский</a><a class="button secondary" href="guide.html#uk" hreflang="uk">Українська</a><a class="button secondary" href="guide.html#be" hreflang="be">Беларуская</a></div><button class="text-button" id="open-help">Открыть короткую справку</button></article>
+            <article><h3>О приложении</h3><p>Разработчик и автор продукта: Denis Ostapenko. Лицензия MIT.</p><div class="button-row"><a class="button secondary" href="guide.html#license">Лицензия</a><a class="button secondary" href="guide.html#notice">NOTICE</a><a class="button secondary" href="https://github.com/denis-ostapenko/truck-driver-english" target="_blank" rel="noopener noreferrer">GitHub</a><a class="button secondary" href="https://www.linkedin.com/in/denisostapenko1985" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="button secondary" href="mailto:denis.alex.ostapenko@gmail.com">Написать автору</a></div></article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <button class="sidebar-backdrop" id="sidebar-backdrop" aria-label="Закрыть меню" hidden></button>
+
+  <dialog class="onboarding-dialog" id="onboarding-dialog" aria-labelledby="onboarding-title">
+    <form method="dialog">
+      <p class="eyebrow">Первый запуск</p>
+      <h2 id="onboarding-title">На какой машине вы работаете?</h2>
+      <div id="onboarding-profile-step">
+      <p>Выбор настроит маршрут. Open и enclosed Hotshot останутся разными.</p>
+      <div class="profile-grid">
+        <button type="button" data-profile="tractor">Tractor-trailer<small>Dry van и reefer</small></button>
+        <button type="button" data-profile="hotshot-open">Hotshot open<small>Dually + open gooseneck</small></button>
+        <button type="button" data-profile="hotshot-enclosed">Hotshot enclosed<small>Dually + enclosed gooseneck</small></button>
+        <button type="button" data-profile="both">Все направления<small>Tractor-trailer + Hotshot open + Hotshot enclosed</small></button>
+      </div>
+      </div>
+      <div id="onboarding-conditions-step" hidden>
+        <p>Если не уверены, оставьте базовые настройки. Изменить их можно позже в разделе Прогресс.</p>
+        <details class="onboarding-conditions-details">
+          <summary>Указать оборудование и условия</summary>
+          <div class="conditions-grid" id="onboarding-conditions"></div>
+        </details>
+        <div class="onboarding-actions"><span id="onboarding-conditions-count" aria-live="polite">Базовые настройки</span><button class="button primary" id="onboarding-conditions-next" type="button">Продолжить</button></div>
+      </div>
+      <div id="onboarding-time-step" hidden>
+        <p>Маршрут можно менять каждый день.</p>
+        <div class="time-choice-grid"><button type="button" data-onboarding-time="5"><strong>5 минут</strong><small>Одна короткая тренировка</small></button><button type="button" data-onboarding-time="10"><strong>10 минут</strong><small>Два полезных шага</small></button><button type="button" data-onboarding-time="15"><strong>15 минут</strong><small>Три шага с практикой</small></button></div>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="help-dialog" id="help-dialog" aria-labelledby="help-title">
+    <div><p class="eyebrow">Как пользоваться</p><h2 id="help-title">Короткая справка</h2><ol><li>В разделе «Сегодня» нажмите один главный шаг.</li><li>В разделе «Учиться» используйте карточки, уроки или поиск.</li><li>В разделе «Практика» тренируйте ELP, инспекции, ситуации и ошибки.</li><li>В разделе «Справочник» открывайте знаки, документы и конспекты.</li><li>Запись голоса доступна только до закрытия страницы.</li><li>Прогресс и основной материал работают без сети после первого открытия.</li></ol><p><a href="guide.html">Открыть полную инструкцию на русском, украинском или белорусском языке</a></p><button class="button primary" id="close-help">Понятно</button></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="data/course-data.js?v=12"></script>
+  <script src="data/listening-data.js?v=2"></script>
+  <script src="app-core.js?v=5"></script>
+  <script src="learning-evaluator.js?v=6"></script>
+  <script src="state-store.js?v=6"></script>
+  <script src="recorder-controller.js?v=1"></script>
+  <script src="app.js?v=31"></script>
+</body>
+</html>

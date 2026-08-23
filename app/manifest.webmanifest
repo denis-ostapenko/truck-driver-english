@@ -1,0 +1,23 @@
+{
+  "name": "Truck Driver English",
+  "short_name": "Truck English",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "description": "Практический курс американского английского для водителей коммерческих автомобилей в США",
+  "background_color": "#f4f1e9",
+  "theme_color": "#10251f",
+  "lang": "ru",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

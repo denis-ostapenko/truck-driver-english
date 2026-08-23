@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "builtOn": "2026-08-22",
+  "scope": "Cycle 3 generated audio expansion only; immutable prior catalog remains hash-verified separately.",
+  "mastersChecked": 189,
+  "deliverablesChecked": 192,
+  "deliverablesByProfile": {
+    "clean": 165,
+    "phone": 3,
+    "roadside": 24
+  },
+  "technicalContract": {
+    "codec": "mp3",
+    "masterSampleRateHz": 44100,
+    "deliverableSampleRateHz": 48000,
+    "channels": 1,
+    "minimumBytes": 1024,
+    "durationSeconds": [
+      0.25,
+      90
+    ],
+    "deliverableMeanDb": [
+      -40,
+      -8
+    ],
+    "deliverableMaxDb": [
+      -6,
+      0
+    ]
+  },
+  "observed": {
+    "durationSeconds": [
+      0.929,
+      20.248
+    ],
+    "deliverableMeanDb": [
+      -24.8,
+      -17.6
+    ],
+    "deliverableMaxDb": [
+      -5.1,
+      -1.8
+    ],
+    "totalBytes": 20362053
+  },
+  "inventorySha256": "4213b4cbc095f4af7586a127eb6959e1b6c1d24857496e135cfdbb19f4e482c3",
+  "issues": [],
+  "status": "passed"
+}

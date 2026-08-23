@@ -1,0 +1,74 @@
+{
+  "version": 3,
+  "builtOn": "2026-08-22",
+  "contentVersion": 2,
+  "includedCourseObjects": {
+    "truckUnits": 400,
+    "hotshotUnits": 100,
+    "inspectionQuestions": 75,
+    "situations": 40,
+    "signs": 80,
+    "documents": 24,
+    "lessons": 21
+  },
+  "sourceOccurrencesAfterAlternativeExpansion": 1763,
+  "sourceOccurrencesByType": {
+    "document": 24,
+    "hotshot-unit": 200,
+    "inspection-question": 163,
+    "lesson": 69,
+    "sign": 160,
+    "situation": 320,
+    "static-ui": 1,
+    "truck-unit": 826
+  },
+  "uniqueExactTexts": 1188,
+  "uniqueExactTextCharacters": 43231,
+  "paidTtsRequests": 1450,
+  "paidTtsCharacters": 52635,
+  "catalogMasterCharacters": 52661,
+  "localReplacementMasters": 2,
+  "finalAudioFiles": 1466,
+  "finalAudioCharacters": 53220,
+  "filesByRole": {
+    "dispatcher": 14,
+    "driver": 1215,
+    "gate-clerk": 23,
+    "inspector": 194,
+    "mechanic": 2,
+    "receiver": 10,
+    "roadside-assistance": 3,
+    "state-trooper": 5
+  },
+  "charactersByRole": {
+    "dispatcher": 607,
+    "driver": 43728,
+    "gate-clerk": 922,
+    "inspector": 7174,
+    "mechanic": 66,
+    "receiver": 473,
+    "roadside-assistance": 91,
+    "state-trooper": 159
+  },
+  "filesByProfile": {
+    "clean": 1021,
+    "phone": 43,
+    "roadside": 402
+  },
+  "charactersByProfile": {
+    "clean": 36173,
+    "phone": 1844,
+    "roadside": 15203
+  },
+  "catalogSeed": "production/audio-catalog-seed.json",
+  "masterSeedReport": "production/audio-master-seeds.json",
+  "masterSeedReportSha256": "58a184fdcac7029892d60ff537a93b5041983bde559be4bb96600f8571fe4c1f",
+  "verifiedMasterFiles": 1450,
+  "verifiedMasterBytes": 53730838,
+  "paidApiCalls": 0,
+  "unresolvedPlaceholders": [],
+  "currentRequirements": 1763,
+  "availableExactRequirements": 1763,
+  "browserSpeechFallbackRequirements": 0,
+  "typedSlotPolicy": "Materialize by slot type in course data before audio lookup."
+}

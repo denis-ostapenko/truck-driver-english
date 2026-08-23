@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.log
+.playwright-cli/
+.wrangler/
+output/
+release/
+.staging/
+[0-1][0-9]_*.md
+20_CLOSED_BETA_RELEASE.md

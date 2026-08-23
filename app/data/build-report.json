@@ -1,0 +1,62 @@
+{
+  "builtOn": "2026-08-23",
+  "sourceCore": 1069,
+  "selectedCore": 700,
+  "excludedCore": 369,
+  "truckUnits": 400,
+  "hotshotUnits": 100,
+  "professionalUnits": 500,
+  "inspectionQuestions": 75,
+  "regulatoryScoredQuestions": 7,
+  "situations": 40,
+  "signs": 80,
+  "officialSignSvgs": 49,
+  "variableLocalSigns": 15,
+  "trainingDms": 16,
+  "documents": 24,
+  "lessons": 21,
+  "legacyIdMigrations": 640,
+  "truckSelection": {
+    "terminology": 120,
+    "requiredPhrases": 30,
+    "representativePromptAndAnswerUnits": 144,
+    "documentPhrases": 20,
+    "professionalPriorityPhrases": 44,
+    "signActions": 42
+  },
+  "pronunciationReview": {
+    "reviewedOn": "2026-08-21",
+    "scope": "All 500 professional units, 400 Truck plus 100 Hotshot",
+    "professionalUnitsReviewed": 500,
+    "fallbackPolicy": "Unknown tokens fail the build; no grapheme fallback is permitted",
+    "fallbackOccurrencesResolved": 56,
+    "unknownTokenTypesResolved": 35,
+    "strutVowelPolicy": "Stressed CMU AH1 is rendered as practical Russian А, never by the former blanket Э mapping. Function-word reductions remain context-sensitive.",
+    "strutAh1TokenTypesReviewed": 34,
+    "spotListenChecklist": [
+      "come",
+      "does",
+      "front",
+      "hundred",
+      "lug",
+      "malfunction",
+      "number",
+      "nut",
+      "truck",
+      "up",
+      "what"
+    ],
+    "explicitCorrections": [
+      "but",
+      "cut",
+      "rub",
+      "vehicle",
+      "out-of-service",
+      "overage",
+      "heavy-duty",
+      "over-the-tire",
+      "driver-side",
+      "e-track"
+    ]
+  }
+}

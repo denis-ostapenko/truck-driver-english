@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "builtOn": "2026-08-21",
+  "provenance": "Immutable local dry seeds. q15 reuses an exact existing studio master. q37, q42, q64 and q71 were rendered once with the offline macOS Alex system voice. No paid or network API was used.",
+  "seeds": {
+    "question:when-is-your-delivery-appointment": {
+      "path": "production/listening-answer-masters/q15.mp3",
+      "sha256": "cb2f4f55faf69b9d5ae8ba971caecdf6e0d487c3ea07ff10dcf00169007bcd92",
+      "spokenText": "My appointment is at nine thirty A.M. on August twentieth."
+    },
+    "question:what-is-the-listed-weight": {
+      "path": "production/listening-answer-masters/q37.mp3",
+      "sha256": "bdb846f7e689261d9ab121688dbf26effa215be75e66a68fcd9476ef3d94b322",
+      "spokenText": "The listed weight is thirty-eight thousand two hundred pounds."
+    },
+    "question:how-many-driving-hours-do-you-have-left": {
+      "path": "production/listening-answer-masters/q42.mp3",
+      "sha256": "5120d35fb1e636b8130f85fdedcb9d9122eefeff2d23c2aa33ccdfd466b849f1",
+      "spokenText": "I have four hours and eighteen minutes left."
+    },
+    "question:tell-me-when-the-low-air-warning-activates": {
+      "path": "production/listening-answer-masters/q64.mp3",
+      "sha256": "bb947142d08e6f22427b1afb00d6d335ed425177045fa1a6bcc5b07e0f834583",
+      "spokenText": "The low-air warning activated at sixty P S I."
+    },
+    "question:the-driver-is-out-of-service-until-oos-condition": {
+      "path": "production/listening-answer-masters/q71.mp3",
+      "sha256": "b91c95dff63e1bf843bdb52d35c6ee3e7800a1cacb0a4fe5311fe01653dc2387",
+      "spokenText": "Understood. I will remain out of service until the required rest period is complete."
+    }
+  }
+}

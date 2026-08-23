@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://truck-driver-english-eug.pages.dev/sitemap.xml

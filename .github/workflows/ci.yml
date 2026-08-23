@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate course data
+        run: python3 scripts/validate_app.py
+
+      - name: Run Python tests
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Run Node tests
+        run: node --test tests/*.test.js
+
+      - name: Check JavaScript syntax
+        run: find app scripts tests -name '*.js' -print0 | xargs -0 -n1 node --check
+
+      - name: Verify generated public guides
+        run: |
+          python3 scripts/build_public_guide.py
+          git diff --exit-code -- app/guide.html app/LICENSE app/NOTICE app/USER_GUIDE_RU.md app/USER_GUIDE_UK.md app/USER_GUIDE_BE.md
